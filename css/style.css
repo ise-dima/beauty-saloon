@@ -77,7 +77,7 @@ html {
 }
 *,
 *::before,
-*::after,h1 {
+*::after {
   box-sizing: inherit;
   margin: 0;
 }
