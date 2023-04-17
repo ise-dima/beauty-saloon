@@ -77,8 +77,9 @@ html {
 }
 *,
 *::before,
-*::after {
+*::after,h1 {
   box-sizing: inherit;
+  margin: 0;
 }
 
 body {
@@ -138,31 +139,13 @@ body {
 .header--color {
   background-color:var(--color-green);
 }
-.header__menu {
-  display: flex;
-}
-.header__logo {
 
-}
-.header__log {
-  display: inline;
-}
-.header__nav {
-  display: inline;
-}
-.header__items {
-  display: flex;
-  margin: 0;
-  gap: 0.625rem;
-}
-.header__link {
-  display: block;
-}
+
 .header__title {
  display: block;
- display: inline;
+
 }
-.header__pic {
+.picture {
   display: flex;
   justify-content:center;
   align-items: center;
