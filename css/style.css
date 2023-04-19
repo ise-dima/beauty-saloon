@@ -132,8 +132,9 @@ body {
   line-height: 1.5em; /*меж сточная высота для всего сайта*/
 }
 .header {
+  height: 78.8125rem;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
 }
 .header--color {
@@ -147,24 +148,38 @@ body {
 .header__toppling {
   display: flex;
   justify-content: space-between;
-  /* padding-top: 10px; */
+}
+.logo {
+  margin-top: 2.5625rem;
+  
 }
 
 .logo__img {
-
+  border-radius: 2.8125rem;
+  object-fit: cover;
+}
+.menu {
+  margin-top: 4.3125rem;
 }
 
 .menu__items {
   display: flex;
-  gap: 3.125rem;
+  align-items: center;
+  gap: 20px;
+}
+.addresses {
+  padding-right: auto;
+}
+.posters {
+  margin-right: auto;
 }
 
 .header__title {
-width: 46.0625rem;
+
 }
 .picture {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 3.75rem;
+  gap: 3.375rem;
 }
