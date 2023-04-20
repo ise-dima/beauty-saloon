@@ -56,7 +56,7 @@
   /*индивидуальные значения пространства(отступы от размера с 320px по 1604px)*/
 
   /*Сетка (grit)*/
-  --grid-max-width: 1604px;
+  --grid-max-width: 1601px;
   --grid-gutter: var(
     --space-s-l,
     clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem)
@@ -83,9 +83,9 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);
-  font-size: 100%;
-  line-height: 1.5em;
+  font-family: var(--font-inter);  /*для всего сайта */
+  font-size: 100%;  /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
+  line-height: 1.5em;  /*меж сточная высота для всего сайта*/
 }
 
 img {
@@ -95,6 +95,7 @@ img {
 ol,
 ul {
   list-style: none;
+  padding: 0;
 }
 
 table {
@@ -126,56 +127,41 @@ a {
         #SECTION (конец снипетов)
 \*------------------------------------*/
 
-body {
-  font-family: var(--font-inter); /*для всего сайта */
-  font-size: 100%; /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
-  line-height: 1.5em; /*меж сточная высота для всего сайта*/
-}
 .header {
-  height: 78.8125rem;
+  height: 78.8125rem; /*низ*/
   width: 100%;
-  margin: auto;
   padding: 0;
 }
 .header--color {
   background-color:var(--color-green);
 }
-.logo__img {
-  height: 4.4375rem;
-  width: 4.6875rem;
-}
-
-.header__toppling {
+.header__toppling{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 .logo {
-  margin-top: 2.5625rem;
-  
+  height: 200px;
 }
-
 .logo__img {
-  border-radius: 2.8125rem;
-  object-fit: cover;
 }
-.menu {
-  margin-top: 4.3125rem;
-}
-
 .menu__items {
+  height: 100px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.addresses {
-  padding-right: auto;
+.address{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 0;
 }
-.posters {
-  margin-right: auto;
+.poster{
+  display: flex;
 }
-
-.header__title {
-
+.header__title{
+  display: flex;
 }
 .picture {
   display: flex;
