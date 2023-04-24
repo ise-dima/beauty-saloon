@@ -129,10 +129,13 @@ a {
 
 .header {
   display: flex;
-  flex-direction: column;
-  
+  /* flex-direction: column;
+  align-items: center;
+  align-content: space-between; */
   height: 78.8125rem; /*низ*/
   width: 100%;
+  margin: 0 auto;
+  padding: 0px 0px 0px 90px;
 }
 
 .header--color {
@@ -141,33 +144,35 @@ a {
 .header__content {
   min-height: 100%;/*что бы вся оболочка была на всю высоту экрана*/
   /*overflow: hidden; /*что бы нечего за экран не вылезло*/
-  margin: 0 auto;
-  padding: 0;
   flex: 1 1 auto; /*позволяет флексу увеличиваться,и уменьшаться,базовый размер автоматический */
 }
 .header__toppling{
-   display: flex;
-   justify-content: space-between;
-   padding: 50px 0;
-  /*flex-direction: column; */
+  display:flex;
+  justify-content: space-between;
 }
 .logo {
   
 }
 .logo__img {
+padding-top: 41px;
 }
 .menu__items {
-  
+  display:flex;
+  padding-top: 68px;
+  gap: 30px;
+}
+.menu__links {
+
 }
 .address{
-  /* height: 100px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin-right: 0; */
+  justify-content:start;
+  margin-top: 50px;
+  text-align:left;
 }
 .poster{
-  
+
 }
 .header__title{
   
