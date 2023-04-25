@@ -129,13 +129,10 @@ a {
 
 .header {
   display: flex;
-  /* flex-direction: column;
-  align-items: center;
-  align-content: space-between; */
   height: 78.8125rem; /*низ*/
   width: 100%;
   margin: 0 auto;
-  padding: 0px 0px 0px 90px;
+  padding: 0px 0px 0px 5.625rem;
 }
 
 .header--color {
@@ -154,6 +151,7 @@ a {
   
 }
 .logo__img {
+  
 padding-top: 41px;
 }
 .menu__items {
