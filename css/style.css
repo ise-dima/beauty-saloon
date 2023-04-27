@@ -153,15 +153,16 @@ padding: 0 0 0 var(--space-xl-2xl);
   flex: 1 1 auto;
 }
 .main {
+  margin-top: 60px;
 }
 .logo {
-  margin-top:var(--space-m-l); /*40px*/
+  /*margin-top:var(--space-m-l); 40px*/
 }
 .logo img {
-  border-radius: 2.1875rem;
+  border-radius: 3.125rem;
 }
 .nav {
-margin-top:var(--space-xl-2xl); /*68px  */
+ /*margin-top:; 68px  var(--space-xl-2xl)   */
 }
 
 .nav__list {
@@ -174,7 +175,7 @@ margin-top:var(--space-xl-2xl); /*68px  */
 }
 
 .address {
-margin: var(--space-xl) 0.625rem 0 0; /*50px*/
+/*margin: 0.625rem 0 0; 50px    var(--space-xl)   */
 }
 .address--color {
   color: var(--color-text-white);
