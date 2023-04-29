@@ -83,9 +83,9 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);  /*для всего сайта */
-  font-size: 100%;  /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
-  line-height: 1.5em;  /*меж сточная высота для всего сайта*/
+  font-family: var(--font-inter); /*для всего сайта */
+  font-size: 100%; /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
+  line-height: 1.5em; /*меж сточная высота для всего сайта*/
 }
 
 img {
@@ -127,19 +127,19 @@ a {
         #SECTION (конец снипетов)
 \*------------------------------------*/
 
-            /**/
+/**/
 .header {
   height: 948px;
   width: 100%;
   margin: 0 auto;
 }
 .header--color {
-  background-color:var(--color-green);
+  background-color: var(--color-green);
 }
-.header__box{
-display:flex;
-height: 683px; /*низ*/
-padding: 0 0 0 var(--space-xl-2xl); /**/
+.header__box {
+  display: flex;
+  height: 683px; /*низ*/
+  padding: 0 0 0 var(--space-xl-2xl); /**/
 }
 .header__sidebar {
   display: flex;
@@ -147,7 +147,6 @@ padding: 0 0 0 var(--space-xl-2xl); /**/
   justify-content: space-between;
   height: 580px;
   width: 70%;
-  
 }
 .main {
   height: 75px;
@@ -155,7 +154,6 @@ padding: 0 0 0 var(--space-xl-2xl); /**/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .logo img {
@@ -164,15 +162,14 @@ padding: 0 0 0 var(--space-xl-2xl); /**/
 
 .nav__list {
   display: flex;
-  gap:var(--space-l); /*35px*/
-  
+  gap: var(--space-l); /*35px*/
 }
 .nav--color {
   color: var(--color-text-white);
 }
 
 .address {
-margin-right: 10px;
+  margin-right: 10px;
 }
 .address--color {
   color: var(--color-text-white);
@@ -183,13 +180,12 @@ margin-right: 10px;
   display: flex;
   font-family: var(--font-roboto);
   font-size: var(--step-4);
-  
 }
 
 .items span {
-width: 100%;
-margin-top: 30px;
-border-bottom: var(--color-white) solid 5px;
+  width: 100%;
+  margin-top: 30px;
+  border-bottom: var(--color-white) solid 5px;
 }
 .items--color {
   color: var(--color-text-white);
@@ -197,7 +193,6 @@ border-bottom: var(--color-white) solid 5px;
 .items__solid {
   display: block;
 }
-
 
 .header__img {
   width: 30%;
@@ -211,14 +206,14 @@ picture {
 }
 
 .picture--color {
-  background-color:var(--color-green);
+  background-color: var(--color-green);
 }
 .picture__list {
-height: 265px;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 140px;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
 }
 
 .link {
@@ -232,12 +227,12 @@ gap: 140px;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  font-family:var(--font-quicksand);
+  font-family: var(--font-quicksand);
   font-weight: 800;
   font-size: var(--step-0);
 }
 
-            /**/
+/**/
 .section {
   height: 800px;
   width: 100%;
@@ -249,114 +244,114 @@ gap: 140px;
   height: 100%;
   background: url(../images/our_workshop.png);
 }
-  /*карусель(начало)*/
-  @media screen and (min-width: 911px) {
-    .ant-carousel {
-      max-width: 810px;
-    }
-  }
-  
-  @media screen and (min-width: 641px) and (max-width: 910px) {
-    .ant-carousel {
-      max-width: 540px;
-    }
-  }
-  
-  @media screen and (max-width: 640px) {
-    .ant-carousel {
-      max-width: 270px;
-    }
-  }
-  
+/*карусель(начало)*/
+@media screen and (min-width: 911px) {
   .ant-carousel {
-    margin: 50px auto auto;
-    padding-top: 10px;
-    border: 1px solid #ccd;
-    background-color: white;
+    max-width: 810px;
   }
-  
-  .ant-carousel-element {
-    width: 270px;
-    text-align: center;
-  }
-  
-  /* General styles */
+}
+
+@media screen and (min-width: 641px) and (max-width: 910px) {
   .ant-carousel {
-    width: auto;
-    position: relative;
+    max-width: 540px;
   }
-  
-  .ant-carousel-hider {
-    overflow: hidden;
-  }
-  
-  .ant-carousel-list {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .ant-carousel-element {
-    display: block;
-    flex: 0 0 auto;
-  }
-  
-  /* Navigation item styles */
-  div.ant-carousel-arrow-left,
-  div.ant-carousel-arrow-right {
-    width: 22px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0.6;
-    z-index: 32;
-  }
-  
-  div.ant-carousel-arrow-left {
-    left: -40px;
-    top: 40%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
-  }
-  
-  div.ant-carousel-arrow-right {
-    right: -40px;
-    top: 40%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
-  }
-  
-  div.ant-carousel-arrow-left:hover {
-    opacity: 1.0;
-  }
-  
-  div.ant-carousel-arrow-right:hover {
-    opacity: 1.0;
-  }
-  
-  div.ant-carousel-dots {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    z-index: 30;
-    text-align: center;
-  }
-  
-  span.ant-dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    padding: 0;
-    display: inline-block;
-    background-color: #BBB;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  /*карусель(конец)*/
+}
 
+@media screen and (max-width: 640px) {
+  .ant-carousel {
+    max-width: 270px;
+  }
+}
 
+.ant-carousel {
+  margin: 50px auto auto;
+  padding-top: 10px;
+  border: 1px solid #ccd;
+  background-color: white;
+}
+
+.ant-carousel-element {
+  width: 270px;
+  text-align: center;
+}
+
+/* General styles */
+.ant-carousel {
+  width: auto;
+  position: relative;
+}
+
+.ant-carousel-hider {
+  overflow: hidden;
+}
+
+.ant-carousel-list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ant-carousel-element {
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* Navigation item styles */
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 32;
+}
+
+div.ant-carousel-arrow-left {
+  left: -40px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png")
+    no-repeat;
+}
+
+div.ant-carousel-arrow-right {
+  right: -40px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png")
+    no-repeat;
+}
+
+div.ant-carousel-arrow-left:hover {
+  opacity: 1;
+}
+
+div.ant-carousel-arrow-right:hover {
+  opacity: 1;
+}
+
+div.ant-carousel-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  z-index: 30;
+  text-align: center;
+}
+
+span.ant-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #bbb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*карусель(конец)*/
