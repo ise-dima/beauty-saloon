@@ -279,16 +279,12 @@ font-weight: 600;
 .ant-carousel {
   width: 100%;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   margin: 50px auto auto;
-  /* padding-top: 10px; */
-  /* border: 1px solid #ccd; */
-  /* background-color: white; */
 }
 
 .ant-carousel-element {
   width: 270px;
+  padding-block: 20px;
   text-align: center;
 }
 
@@ -333,16 +329,16 @@ div.ant-carousel-arrow-left {
   left: -40px;
   top: 40%;
   display: block;
-  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png")
-    no-repeat;
+  /* background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png"); */
+  background-position: no-repeat;
 }
 
 div.ant-carousel-arrow-right {
   right: -40px;
   top: 40%;
   display: block;
-  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png")
-    no-repeat;
+  /* background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png"); */
+    background-position: no-repeat;
 }
 
 div.ant-carousel-arrow-left:hover {
