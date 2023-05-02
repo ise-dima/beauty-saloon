@@ -260,7 +260,7 @@ font-weight: 600;
 /*КАРУСЕЛЬ(начало)*/
 @media screen and (min-width: 911px) {
   .ant-carousel {
-    max-width: 1390px;
+    max-width:1396px;
   }
 }
 
@@ -284,8 +284,12 @@ font-weight: 600;
 
 .ant-carousel-element {
   width: 270px;
-  padding-block: 20px;
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.ant-carousel-element h3 {
+  padding-top: 10px;
 }
 
 /* General styles */
@@ -314,41 +318,6 @@ font-weight: 600;
   background-color: white;
 }
 
-/* Navigation item styles */
-div.ant-carousel-arrow-left,
-div.ant-carousel-arrow-right {
-  width: 22px;
-  height: 40px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.6;
-  z-index: 32;
-}
-
-div.ant-carousel-arrow-left {
-  left: -40px;
-  top: 40%;
-  display: block;
-  /* background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png"); */
-  background-position: no-repeat;
-}
-
-div.ant-carousel-arrow-right {
-  right: -40px;
-  top: 40%;
-  display: block;
-  /* background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png"); */
-    background-position: no-repeat;
-}
-
-div.ant-carousel-arrow-left:hover {
-  opacity: 1;
-}
-
-div.ant-carousel-arrow-right:hover {
-  opacity: 1;
-}
-
 div.ant-carousel-dots {
   width: 100%;
   height: auto;
@@ -375,6 +344,7 @@ span.ant-dot {
 height: 65px;
 width: 270px;
 background-color: var(--color-green);
+border-radius: 35px;
 }
 
 .button-link {
@@ -382,5 +352,6 @@ background-color: var(--color-green);
   font-size: var(--step-1);
   font-weight: 400;
   text-align: center;
+  line-height: 65px;
   color: var(--color-text-white);
 }
