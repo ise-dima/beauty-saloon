@@ -356,6 +356,20 @@ border-radius: 35px;
   color: var(--color-text-white);
 }
 
+.aside__title {
+display: flex;
+justify-content: flex-start;
+}
+
+.sidebar {
+display: flex;
+justify-content: center; 
+}
+
+.subtitle {
+/* display: flex; */
+}
+
 .content {
   display: flex;
 }
