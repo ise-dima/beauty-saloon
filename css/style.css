@@ -237,7 +237,7 @@ picture {
   margin:0;
 }
 
-.section__content {
+.section__container {
   height: 660px;
   width: 100%;
   display: flex;
@@ -354,4 +354,18 @@ border-radius: 35px;
   text-align: center;
   line-height: 65px;
   color: var(--color-text-white);
+}
+
+.content {
+  display: flex;
+}
+
+.content__items {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content__images {
+  width: 45%;
 }
