@@ -234,7 +234,7 @@ picture {
 
 .section {
   width: 100%;
-  margin:0;
+  margin:0 auto;
 }
 
 .section__container {
@@ -341,8 +341,9 @@ span.ant-dot {
 /*КАРУСЕЛЬ(конец)*/
 
 .section__button {
-height: 65px;
-width: 270px;
+/* height: 65px;
+width: 270px; */
+padding: 15px 35px;
 background-color: var(--color-green);
 border-radius: 35px;
 }
@@ -352,34 +353,71 @@ border-radius: 35px;
   font-size: var(--step-1);
   font-weight: 400;
   text-align: center;
-  line-height: 65px;
   color: var(--color-text-white);
+}
+
+.page {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.page__container {
+  height: 2160px;
+  width: 100%;
+}
+
+.page--color{
+  background-color: var(--color-green);
+}
+
+.aside {
+height: 2160px;
+max-width: 1225px;
+margin: 0 auto;
+}
+
+.aside--color {
+  background-color: var(--color-white);
 }
 
 .aside__title {
 display: flex;
 justify-content: flex-start;
+padding: 76px 0px 12px 100px ;
 }
 
 .sidebar {
 display: flex;
 justify-content: center; 
+padding-bottom: 40px;
 }
 
 .subtitle {
-/* display: flex; */
+padding-bottom: 20px;
 }
 
 .content {
   display: flex;
 }
 
-.content__items {
+.content__items-1 {
   width: 55%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  
+}
+
+.content__items-2 {
+  width: 55%;
+  display: flex;
 }
 
 .content__images {
   width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.picture {
 }
