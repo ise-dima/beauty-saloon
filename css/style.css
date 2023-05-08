@@ -57,10 +57,8 @@
 
   /*Сетка (grit)*/
   --grid-max-width: 1425px;
-  --grid-gutter: var(
-    --space-s-l,
-    clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem)
-  );
+  --grid-gutter: var(--space-s-l,
+      clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem));
   --grid-columns: 12;
   /*Сетка (grit)*/
 
@@ -73,8 +71,10 @@
 \*------------------------------------*/
 /*Пред.настройки НАЧАЛО*/
 html {
-  box-sizing: border-box; /*уберет бордюра во круг блока "-0.3125rem(или -5px)"*/
+  box-sizing: border-box;
+  /*уберет бордюра во круг блока "-0.3125rem(или -5px)"*/
 }
+
 *,
 *::before,
 *::after {
@@ -83,9 +83,12 @@ html {
 }
 
 body {
-  font-family: var(--font-inter); /*для всего сайта */
-  font-size: 100%; /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
-  line-height: 1.5em; /*меж сточная высота для всего сайта*/
+  font-family: var(--font-inter);
+  /*для всего сайта */
+  font-size: 100%;
+  /*размер шрифта будет 100% от настроек браузера (от 18 px или 1.125rem)*/
+  line-height: 1.5em;
+  /*меж сточная высота для всего сайта*/
 }
 
 img {
@@ -110,6 +113,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /*UTOPIA НАЧАЛО*/
 .u-container {
   max-width: var(--grid-max-width);
@@ -121,6 +125,7 @@ a {
   display: grid;
   gap: var(--grid-gutter);
 }
+
 /*UTOPIA КОНЕЦ*/
 /*пред настройки КОНЕЦ*/
 /*------------------------------------*\
@@ -133,14 +138,19 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+
 .header--color {
   background-color: var(--color-green);
 }
+
 .header__box {
   display: flex;
-  height: 683px; /*низ*/
-  padding: 0 0 0 var(--space-xl-2xl); /**/
+  height: 683px;
+  /*низ*/
+  padding: 0 0 0 var(--space-xl-2xl);
+  /**/
 }
+
 .header__sidebar {
   display: flex;
   flex-direction: column;
@@ -148,6 +158,7 @@ a {
   height: 580px;
   width: 70%;
 }
+
 .main {
   height: 75px;
   margin-top: 40px;
@@ -162,8 +173,10 @@ a {
 
 .nav__list {
   display: flex;
-  gap: var(--space-l); /*35px*/
+  gap: var(--space-l);
+  /*35px*/
 }
+
 .nav--color {
   color: var(--color-text-white);
 }
@@ -171,9 +184,11 @@ a {
 .address {
   margin-right: 10px;
 }
+
 .address--color {
   color: var(--color-text-white);
 }
+
 .items {
   height: 60px;
   padding-left: 120px;
@@ -187,9 +202,11 @@ a {
   margin-top: 30px;
   border-bottom: var(--color-white) solid 5px;
 }
+
 .items--color {
   color: var(--color-text-white);
 }
+
 .items__solid {
   display: block;
 }
@@ -208,6 +225,7 @@ picture {
 .picture--color {
   background-color: var(--color-green);
 }
+
 .picture__list {
   height: 265px;
   display: flex;
@@ -220,9 +238,11 @@ picture {
   display: flex;
   text-align: center;
 }
+
 .link--text-color {
   color: var(--color-text-black);
 }
+
 .link div {
   display: flex;
   flex-direction: column;
@@ -234,7 +254,7 @@ picture {
 
 .section {
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .section__container {
@@ -252,15 +272,15 @@ picture {
 }
 
 .section__title h2 {
-font-family: var(--font-quicksand);
-font-size: var(--step-3);
-font-weight: 600;
+  font-family: var(--font-quicksand);
+  font-size: var(--step-3);
+  font-weight: 600;
 }
 
 /*КАРУСЕЛЬ(начало)*/
 @media screen and (min-width: 911px) {
   .ant-carousel {
-    max-width:1396px;
+    max-width: 1396px;
   }
 }
 
@@ -338,14 +358,15 @@ span.ant-dot {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /*КАРУСЕЛЬ(конец)*/
 
 .section__button {
-/* height: 65px;
+  /* height: 65px;
 width: 270px; */
-padding: 15px 35px;
-background-color: var(--color-green);
-border-radius: 35px;
+  padding: 15px 35px;
+  background-color: var(--color-green);
+  border-radius: 35px;
 }
 
 .button-link {
@@ -359,22 +380,22 @@ border-radius: 35px;
 .page {
   width: 100%;
   margin: 0 auto;
-  
+
 }
 
 .page__container {
-  height: 2160px;
+  height: 2470px;
   width: 100%;
 }
 
-.page--color{
+.page--color {
   background-color: var(--color-green);
 }
 
 .aside {
-height: 2160px;
-max-width: 1225px;
-margin: 0 auto;
+  height: 2400px;
+  max-width: 1225px;
+  margin: 0 auto;
 }
 
 .aside--color {
@@ -382,15 +403,21 @@ margin: 0 auto;
 }
 
 .aside__title {
-display: flex;
-justify-content: flex-start;
-padding: 76px 0px 12px 100px ;
+  display: flex;
+  justify-content: flex-start;
+  padding: 76px 0px 12px 50px;
+  font-family: var(--font-roboto);
+  font-weight: 800;
+  font-size: var(--step-1);
 }
 
 .sidebar {
-display: flex;
-justify-content: center; 
-padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding-block: 40px;
+  font-family: var(--font-quicksand);
+  font-weight: 400;
+  font-size: var(--step-2);
 }
 
 .content {
@@ -398,30 +425,44 @@ padding-bottom: 40px;
   justify-content: space-around;
 }
 
-table.delivery {width: 100%; border: 0px; border-collapse: collapse;}
-table.delivery thead {font-weight: bold;}
-table.delivery td {padding: 0.6rem 1rem; border-bottom: 1px solid #e8e9eb;}
-
-/* .subtitle{
-  padding-top: 20px;
+table.delivery {
+  width: 40%;
+  border: 0px;
+  border-collapse: collapse;
 }
 
-.subtitle-item {
-  padding-block: 20px;
-} */
+table.delivery thead {
+  font-weight: bold;
+}
+
+table.delivery td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #e8e9eb;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: var(--step-0);
+}
+
+table.delivery th {
+  padding: 20px 5px;
+  text-align: left;
+  font-family: var(--font-quicksand);
+  font-weight: 600;
+  font-size: var(--step-0);
+}
 
 .content__items {
   width: 55%;
   display: flex;
   justify-content: space-around;
-  
+
 }
 
 .content__images {
   width: 45%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.picture {
-}
+.picture {}
