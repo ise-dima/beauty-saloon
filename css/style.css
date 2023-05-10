@@ -181,11 +181,11 @@ a {
   color: var(--color-text-white);
 }
 
-.address {
+.phone {
   margin-right: 10px;
 }
 
-.address--color {
+.phone--color {
   color: var(--color-text-white);
 }
 
@@ -464,5 +464,3 @@ table.delivery th {
   justify-content: center;
   align-items: center;
 }
-
-.picture {}
